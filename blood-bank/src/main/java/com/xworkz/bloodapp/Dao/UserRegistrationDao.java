@@ -4,4 +4,5 @@ import com.xworkz.bloodapp.entity.UserEntity;
 
 public interface UserRegistrationDao {
     boolean saveUser(UserEntity user);
+    UserEntity getUserById(String userId);
 }
