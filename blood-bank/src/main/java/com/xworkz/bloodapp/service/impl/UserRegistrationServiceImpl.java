@@ -24,4 +24,22 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
         userRegistrationDao.saveUser(userEntity);
         return true;
     }
+
+    @Override
+    public UserDto getUser(String userId) {
+
+        UserDto userDto = new UserDto();
+        UserEntity userEntity=userRegistrationDao.getUserById(userId);
+        if(userEntity!= null) {
+            userDto.setUserId(userEntity.getUserId());
+            userDto.setPassword(userEntity.getPassword());
+            userDto.setEmail(userEntity.getEmail());
+            userDto.setFirstname(userEntity.getFirstname());
+            userDto.setLastname(userEntity.getLastname());
+            userDto.setBloodGroup(userEntity.getBloodGroup());
+            userDto.setRepeatPassword(userEntity.getRepeatPassword());
+        }
+
+        return userDto;
+    }
 }
