@@ -14,20 +14,29 @@ public class UserRegistrationDaoImpl implements UserRegistrationDao {
 
         Configuration configuration = new Configuration();
         configuration.configure();
-
         SessionFactory sessionFactory = configuration.buildSessionFactory();
         Session session = sessionFactory.openSession();
-
         Transaction transaction = session.beginTransaction();
-
-        session.save(user);
-
+        session.persist(user);
         transaction.commit();
-
         session.close();
         sessionFactory.close();
 
         return true;
 
+    }
+
+    @Override
+    public UserEntity getUserById(String userId) {
+
+        Configuration configuration = new Configuration();
+        configuration.configure();
+        SessionFactory sessionFactory = configuration.buildSessionFactory();
+        Session session = sessionFactory.openSession();
+        UserEntity user=session.get(UserEntity.class,userId);
+        session.close();
+        sessionFactory.close();
+
+        return user;
     }
 }
