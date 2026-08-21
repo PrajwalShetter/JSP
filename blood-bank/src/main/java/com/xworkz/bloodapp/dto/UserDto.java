@@ -13,7 +13,7 @@ public class UserDto {
     private String email;
     private String firstname;
     private  String lastname;
-    private String userId;
+    private int userId;
     private  String password;
     private String repeatPassword;
     private String bloodGroup;
