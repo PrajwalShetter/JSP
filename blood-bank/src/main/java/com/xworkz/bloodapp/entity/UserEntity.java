@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id; // <-- ADD THIS IMPORT
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -16,9 +13,10 @@ import javax.persistence.Table;
 @Table(name = "user_table")
 public class UserEntity {
 
-    @Id // <-- ADD THIS: Marks this specific field as your Table Primary Key
+    @Id
     @Column(name = "userId")
-    private String userId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int userId;
 
     @Column(name = "email_id")
     private String email;
