@@ -21,16 +21,13 @@ public class UserRegistrationServlet extends GenericServlet {
         String email = req.getParameter("EmailId");
         String firstname = req.getParameter("firstname");
         String lastname = req.getParameter("lastname");
-        String userId = req.getParameter("UserId");
         String bloodGroup = req.getParameter("bloodGroup");
         String password = req.getParameter("password");
         String repeatPassword = req.getParameter("repeatPassword");
 
 
-
         UserDto user = new UserDto();
         user.setEmail(email);
-        user.setUserId(userId);
         user.setRepeatPassword(repeatPassword);
         user.setBloodGroup(bloodGroup);
         user.setFirstname(firstname);
@@ -40,9 +37,13 @@ public class UserRegistrationServlet extends GenericServlet {
         System.out.println(user);
 
         UserRegistrationService userRegistrationService = new UserRegistrationServiceImpl();
-        userRegistrationService.saveUser(user);
+        boolean isValidate = userRegistrationService.saveUser(user);
 
-
+        if(isValidate)
         res.getWriter().println("thank you for registration");
+        else
+            res.getWriter().println("sry");
     }
+
+
 }
