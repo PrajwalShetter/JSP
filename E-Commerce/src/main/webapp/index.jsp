@@ -165,8 +165,9 @@
         </div>
         <div class="nav-links">
             <a href="catalog.jsp">All Products</a>
-            <a href="categories.jsp">Categories</a>
+            <a href="getUser.jsp">user Profile</a>
             <a href="cart.jsp" style="font-weight: bold;">Cart (0)</a>
+            <a href="signUp.jsp">signUp</a>
         </div>
     </header>
 
@@ -223,6 +224,7 @@
 
         </div>
     </div>
+
 
 </body>
 </html>

@@ -1,4 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eabe988d-357b-40c8-8581-5ef9f0d46b5f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../CarePulse/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CarePulse/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-Commerce/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E-Commerce/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-Commerce/src/main/java/com/xworkz/eCommerce/service/UserRegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E-Commerce/src/main/java/com/xworkz/eCommerce/service/UserRegistrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-Commerce/src/main/java/com/xworkz/eCommerce/service/impl/UserRegistrationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E-Commerce/src/main/java/com/xworkz/eCommerce/service/impl/UserRegistrationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-Commerce/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../E-Commerce/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EcoTrack/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EcoTrack/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EcoTrack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EcoTrack/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EcoTrack/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../EcoTrack/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TaskWeaver/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../TaskWeaver/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../YieldMap/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../YieldMap/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../YieldMap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../YieldMap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blood-bank/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blood-bank/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3IARUqbIaD5qMJrEeP2aJeN1kgn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Smart Tomcat.Tomcat: GuardRail.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/X-workz/JSP/GuardRail/src/main/webapp",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\X-workz\JSP\GuardRail\src\main\webapp" />
+      <recent name="E:\X-workz\JSP\GuardRail\src\main\resources\META-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat: GuardRail" type="com.poratu.idea.plugins.tomcat">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="" />
+      <option name="contextPath" value="/GuardRail" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.38" />
+          <option name="path" value="C:/apache-tomcat-9.0.38" />
+          <option name="version" value="9.0.38.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="GuardRail" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eabe988d-357b-40c8-8581-5ef9f0d46b5f" name="Changes" comment="" />
+      <created>1787205406775</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787205406775</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
 </project>

@@ -146,8 +146,8 @@
         </div>
         <div class="nav-links">
             <a href="boards.jsp">My Boards</a>
-            <a href="teams.jsp">Manage Team</a>
-            <a href="login.jsp" style="font-weight: bold; color: #4a5568;">User Login</a>
+            <a href="getUser.jsp">user profile</a>
+            <a href="signUp.jsp" style="font-weight: bold; color: #4a5568;">User Login</a>
         </div>
     </header>
 
