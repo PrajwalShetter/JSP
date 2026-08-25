@@ -7,7 +7,7 @@
 
 <h1>This is an Account page</h2>
 
-<form action= "getAccount">
+<form action= "getAccount" method = "post">
 Enter your id <input type = "text" name="id">
 <input type ="submit" value ="SEARCH">
 </form>
@@ -16,3 +16,4 @@ Enter your id <input type = "text" name="id">
 
 </body>
 </html>
+
