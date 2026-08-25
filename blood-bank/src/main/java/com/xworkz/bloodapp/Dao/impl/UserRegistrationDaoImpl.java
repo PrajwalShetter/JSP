@@ -7,7 +7,23 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+import java.util.Collections;
+import java.util.List;
+
 public class UserRegistrationDaoImpl implements UserRegistrationDao {
+
+
+    private EntityManagerFactory entityManagerFactory;
+    private EntityManager entityManager;
+
+    public UserRegistrationDaoImpl(){
+        entityManagerFactory = Persistence.createEntityManagerFactory("bloodbank");
+        entityManager= entityManagerFactory.createEntityManager();
+    }
 
     @Override
     public boolean saveUser(UserEntity user) {
@@ -37,6 +53,19 @@ public class UserRegistrationDaoImpl implements UserRegistrationDao {
         session.close();
         sessionFactory.close();
 
+        return user;
+    }
+
+    @Override
+    public List<UserEntity> getAllUser() {
+        String jpql = "select u from UserEntity u";
+        Query query = entityManager.createQuery(jpql);
+        List<UserEntity> user = query.getResultList();
+        if(user == null){
+            System.out.println("there is no data in the database");
+        }
+        entityManager.close();
+        entityManagerFactory.close();
         return user;
     }
 }
