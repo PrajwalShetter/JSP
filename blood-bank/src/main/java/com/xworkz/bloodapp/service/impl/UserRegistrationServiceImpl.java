@@ -6,6 +6,10 @@ import com.xworkz.bloodapp.dto.UserDto;
 import com.xworkz.bloodapp.entity.UserEntity;
 import com.xworkz.bloodapp.service.UserRegistrationService;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class UserRegistrationServiceImpl implements UserRegistrationService {
 
     UserRegistrationDao userRegistrationDao = new UserRegistrationDaoImpl();
@@ -98,5 +102,29 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
         }
 
         return userDto;
+    }
+
+
+    @Override
+    public List<UserDto> getAllUser() {
+
+        List<UserDto> userDtos = new ArrayList<>();
+        List<UserEntity> userEntities = userRegistrationDao.getAllUser();
+
+        if(userEntities != null){
+
+            userEntities.forEach(userEntity -> {
+                UserDto user = new UserDto();
+                user.setUserId(userEntity.getUserId());
+                user.setEmail(userEntity.getEmail());
+                user.setFirstname(userEntity.getFirstname());
+                user.setLastname(userEntity.getLastname());
+                user.setPassword(userEntity.getPassword());
+                user.setRepeatPassword(userEntity.getRepeatPassword());
+                user.setBloodGroup(userEntity.getBloodGroup());
+                userDtos.add(user);
+            });
+        }
+        return userDtos;
     }
 }
