@@ -8,6 +8,6 @@
 <a href="getAccount.jsp">Account</a>
 <br>
 <br>
-<a href="getUsers">View All Users</a>
+<a href="viewUsers">View All Users</a>
 </body>
 </html>
