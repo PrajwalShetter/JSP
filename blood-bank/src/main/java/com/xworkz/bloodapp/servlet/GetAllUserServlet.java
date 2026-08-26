@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(urlPatterns = "/getUsers")
+@WebServlet(urlPatterns = "/viewUsers")
 public class GetAllUserServlet extends HttpServlet {
 
     @Override
@@ -26,7 +26,7 @@ public class GetAllUserServlet extends HttpServlet {
             System.out.println(user);
         }
 
-        req.setAttribute("dto", users);
+        req.setAttribute("dtos", users);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("viewUsers.jsp");
         requestDispatcher.forward(req,resp);
 
