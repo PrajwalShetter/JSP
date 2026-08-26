@@ -22,9 +22,6 @@ public class GetAllUserServlet extends HttpServlet {
         UserRegistrationService userRegistrationService = new UserRegistrationServiceImpl();
         List<UserDto> users = userRegistrationService.getAllUser();
 
-        for (UserDto user : users){
-            System.out.println(user);
-        }
 
         req.setAttribute("dtos", users);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("viewUsers.jsp");
