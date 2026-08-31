@@ -77,7 +77,7 @@
     <div class="form-container">
         <h2>Create New Account</h2>
 
-        <form action="register" method = "post">
+        <form action="register" method = "">
 
             <div class="form-group">
                 <label>Email Address</label>
