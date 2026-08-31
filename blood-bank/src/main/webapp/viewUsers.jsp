@@ -45,26 +45,9 @@
 
             <td style="padding: 10px; border: 1px solid #ddd;">
 
-                <button type="button"
-                        style="background-color: #3498db;
-                               color: white;
-                               border: none;
-                               padding: 7px 14px;
-                               border-radius: 4px;
-                               cursor: pointer;
-                               margin-right: 5px;">
-                    Edit
-                </button>
+              <a href="getData?id=${dto.getUserId()}"> Edit</a>
 
-                <button type="button"
-                        style="background-color: #e74c3c;
-                               color: white;
-                               border: none;
-                               padding: 7px 14px;
-                               border-radius: 4px;
-                               cursor: pointer;">
-                    Delete
-                </button>
+                <a href="delete?id=${dto.getUserId()}">Delete</a>
 
             </td>
 
