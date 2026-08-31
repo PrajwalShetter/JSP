@@ -10,4 +10,5 @@ public interface UserRegistrationService {
     boolean saveUser(UserDto user);
     UserDto getUser(String userId);
     List<UserDto> getAllUser();
+    int deleteUser(int id);
 }
