@@ -8,4 +8,5 @@ public interface UserRegistrationDao {
     boolean saveUser(UserEntity user);
     UserEntity getUserById(String userId);
     List<UserEntity> getAllUser();
+    int deleteUser(int id);
 }
