@@ -68,4 +68,17 @@ public class UserRegistrationDaoImpl implements UserRegistrationDao {
         entityManagerFactory.close();
         return user;
     }
+
+    @Override
+    public int deleteUser(int id) {
+        entityManager.getTransaction().begin();
+        String jpql = "delete from UserEntity u where id=:id";
+        Query query = entityManager.createQuery(jpql);
+        query.setParameter("id",id);
+        int delete= query.executeUpdate();
+        entityManager.getTransaction().commit();
+        entityManager.close();
+        entityManagerFactory.close();
+        return delete;
+    }
 }
