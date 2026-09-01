@@ -4,6 +4,8 @@
 
 <html>
 <body+>
+
+<%@ include file="navbar.jsp" %>
 <h2>Hello World!</h2>
 
 <h1>View all Users</h1>
@@ -45,7 +47,7 @@
 
             <td style="padding: 10px; border: 1px solid #ddd;">
 
-              <a href="getData?id=${dto.getUserId()}"> Edit</a>
+              <a href="fetchAccount?id=${dto.getUserId()}"> Edit</a>
 
                 <a href="delete?id=${dto.getUserId()}">Delete</a>
 
