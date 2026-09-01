@@ -73,7 +73,7 @@
     </style>
 </head>
 <body>
-
+<%@ include file="navbar.jsp" %>
     <div class="form-container">
         <h2>Create New Account</h2>
 
@@ -95,11 +95,19 @@
             </div>
 
             <div class="form-group">
-                <label>Blood Group</label>
-                <input type="text" name="bloodGroup" placeholder="e.g., O+, A-">
+                <label for="bloodGroup">Blood Group</label>
+                <select id="bloodGroup" name="bloodGroup" class="form-select" aria-label="Select Blood Group">
+                    <option value="" selected disabled>Select your blood group</option>
+                    <option value="O+">O Positive (O+)</option>
+                    <option value="O-">O Negative (O-)</option>
+                    <option value="A+">A Positive (A+)</option>
+                    <option value="A-">A Negative (A-)</option>
+                    <option value="B+">B Positive (B+)</option>
+                    <option value="B-">B Negative (B-)</option>
+                    <option value="AB+">AB Positive (AB+)</option>
+                    <option value="AB-">AB Negative (AB-)</option>
+                </select>
             </div>
-
-
 
             <div class="form-group">
                 <label>Password</label>
