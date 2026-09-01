@@ -74,9 +74,9 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
     }
 
     @Override
-    public UserDto getUser(String userId) {
+    public UserDto getUser(int userId) {
 
-        if (userId == null || userId.trim().isEmpty()) {
+        if (userId == 0 ) {
             System.err.println("Validation Failed: Provided User ID is empty.");
             return null;
         }
@@ -87,7 +87,7 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
             userDto.setUserId(userEntity.getUserId());
             userDto.setPassword(userEntity.getPassword());
             userDto.setEmail(userEntity.getEmail());
-            userDto.getFirstname(); // Fixed text sequence to properly assign fields
+            userDto.getFirstname();
             userDto.setFirstname(userEntity.getFirstname());
             userDto.setLastname(userEntity.getLastname());
             userDto.setBloodGroup(userEntity.getBloodGroup());
@@ -124,5 +124,18 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
     @Override
     public int deleteUser(int id) {
         return userRegistrationDao.deleteUser(id);
+    }
+
+
+    @Override
+    public boolean updateAccount(UserDto userDto) {
+        UserEntity user = new UserEntity();
+
+        user.setUserId(userDto.getUserId());
+        user.setEmail(userDto.getEmail());
+        user.setFirstname(userDto.getFirstname());
+        user.setLastname(userDto.getLastname());
+        user.setBloodGroup(userDto.getBloodGroup());
+        return true;
     }
 }

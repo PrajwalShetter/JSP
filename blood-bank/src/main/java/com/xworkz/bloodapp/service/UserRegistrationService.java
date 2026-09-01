@@ -8,7 +8,8 @@ import java.util.List;
 public interface UserRegistrationService {
 
     boolean saveUser(UserDto user);
-    UserDto getUser(String userId);
+    UserDto getUser(int userId);
     List<UserDto> getAllUser();
     int deleteUser(int id);
+    boolean updateAccount(UserDto userDto);
 }
