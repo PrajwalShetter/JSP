@@ -3,6 +3,7 @@
 
 <html>
 <body+>
+<%@ include file="navbar.jsp" %>
 <h2>Hello World!</h2>
 
 <h1>This is an Account page</h2>
