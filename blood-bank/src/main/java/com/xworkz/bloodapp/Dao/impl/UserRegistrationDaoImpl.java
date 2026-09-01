@@ -43,7 +43,7 @@ public class UserRegistrationDaoImpl implements UserRegistrationDao {
     }
 
     @Override
-    public UserEntity getUserById(String userId) {
+    public UserEntity getUserById(int userId) {
 
         Configuration configuration = new Configuration();
         configuration.configure();
@@ -80,5 +80,15 @@ public class UserRegistrationDaoImpl implements UserRegistrationDao {
         entityManager.close();
         entityManagerFactory.close();
         return delete;
+    }
+
+    @Override
+    public boolean updateAccount(UserEntity user) {
+        entityManager.getTransaction().begin();
+        entityManager.merge(user);
+        entityManager.getTransaction().commit();
+        entityManager.close();
+        entityManagerFactory.close();
+        return true;
     }
 }

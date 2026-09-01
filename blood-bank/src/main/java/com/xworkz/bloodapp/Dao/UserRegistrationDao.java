@@ -6,7 +6,8 @@ import java.util.List;
 
 public interface UserRegistrationDao {
     boolean saveUser(UserEntity user);
-    UserEntity getUserById(String userId);
+    UserEntity getUserById(int userId);
     List<UserEntity> getAllUser();
     int deleteUser(int id);
+    boolean updateAccount(UserEntity user);
 }
