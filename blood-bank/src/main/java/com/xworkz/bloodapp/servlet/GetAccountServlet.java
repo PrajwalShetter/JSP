@@ -15,7 +15,7 @@ public class GetAccountServlet extends GenericServlet {
 
         UserRegistrationService userRegistrationService = new UserRegistrationServiceImpl();
         String id = req.getParameter("id");
-        UserDto userDto = userRegistrationService.getUser(id);
+        UserDto userDto = userRegistrationService.getUser(Integer.parseInt(id));
 //        System.out.println(userDto);
 
         req.setAttribute("dto", userDto);
