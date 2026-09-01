@@ -20,7 +20,7 @@ public class AccountDeleteServlet extends HttpServlet {
         String id = req.getParameter("id");
         userRegistrationService.deleteUser(Integer.parseInt(id));
 
-        resp.sendRedirect("viewUsers.jsp");
+        resp.sendRedirect("viewUsers");
 
     }
 }
