@@ -119,7 +119,6 @@
         </div>
         <div class="nav-links">
             <a href="getAllUser">View All Users</a>
-            <a href="getUser.jsp">User Profile</a>
             <a href="signUp.jsp" style="font-weight: bold; color: #000000;">signUp</a>
         </div>
     </header>
