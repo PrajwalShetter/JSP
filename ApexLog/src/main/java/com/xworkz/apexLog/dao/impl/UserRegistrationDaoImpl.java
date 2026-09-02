@@ -50,4 +50,42 @@ public class UserRegistrationDaoImpl implements UserRegistrationDao {
         sessionFactory.close();
         return userEntities;
     }
+
+    @Override
+    public boolean deleteAccount(int id) {
+
+        Session session = sessionFactory.openSession();
+
+        Transaction transaction = session.beginTransaction();
+
+        UserEntity user = session.get(UserEntity.class, id);
+
+        if (user != null) {
+
+            session.remove(user);
+
+            transaction.commit();
+
+            session.close();
+
+            return true;
+        }
+
+        transaction.rollback();
+
+        session.close();
+
+        return false;
+    }
+
+    @Override
+    public boolean updateAccount(UserEntity user) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.merge(user);
+        transaction.commit();
+        session.close();
+        sessionFactory.close();
+        return true;
+    }
 }
