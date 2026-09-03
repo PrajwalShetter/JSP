@@ -1,4 +1,7 @@
-```jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page isELIgnored = "false" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="ps" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,7 +114,7 @@
 
             <input type="text"
                    name="firstname"
-                   value="${updateDto.getFirstName()}"
+                   value="${updateDto.getFirstname()}"
                    required>
 
         </div>
@@ -123,7 +126,7 @@
 
             <input type="text"
                    name="lastname"
-                   value="${updateDto.getLastName()}"
+                   value="${updateDto.getLastname()}"
                    required>
 
         </div>
