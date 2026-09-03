@@ -130,12 +130,12 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
     @Override
     public boolean updateAccount(UserDto userDto) {
         UserEntity user = new UserEntity();
-
         user.setUserId(userDto.getUserId());
         user.setEmail(userDto.getEmail());
         user.setFirstname(userDto.getFirstname());
         user.setLastname(userDto.getLastname());
         user.setBloodGroup(userDto.getBloodGroup());
+        userRegistrationDao.updateAccount(user);
         return true;
     }
 }
