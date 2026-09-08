@@ -34,7 +34,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
         String jpql= "select e from EmployeeEntity e";
         List<EmployeeEntity> employeeEntities= entityManager.createQuery(jpql).getResultList();
         entityManager.close();
-        entityManager.close();
         return employeeEntities;
     }
 
