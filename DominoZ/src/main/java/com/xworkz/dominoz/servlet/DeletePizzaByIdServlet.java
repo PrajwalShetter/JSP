@@ -15,12 +15,14 @@ import java.io.IOException;
 public class DeletePizzaByIdServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 
         PizzaService pizzaService = new pizzaServiceImpl();
-        String id = req.getParameter("pizzaId");
+        String id = req.getParameter("id");
         pizzaService.deletePizzaById(Integer.parseInt(id));
+
+        resp.sendRedirect("viewAllPizza");
 
 
     }
