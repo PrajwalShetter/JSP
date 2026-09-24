@@ -79,8 +79,9 @@
             <span>YieldMap</span>
         </div>
         <div class="nav-links">
+        <a href="viewAllWarehouse">WhereHouse</a>
             <a href="signUp.jsp" style="font-weight: bold;">Register Hub</a>
-            <a href="getUser.jsp">User profile</a>
+            <a href="getWarehouse.jsp">User profile</a>
         </div>
     </header>
 
